@@ -1,701 +1,438 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>لينوكور 900 | تنزيل نظام التشغيل</title><meta name="robots" content="index, follow"><meta name="description"
-content="الموقع الرسمي لتنزيل نظام التشغيل لينوكور 900 مجاناً.">
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>تنزيل نظام لينوكور لجميع أنواع الكمبيوتر</title>
 
-<meta name="keywords"
-content="لينوكور 900, Lenokor OS 900, Lenokor ISO, تنزيل لينوكور">
+<meta name="robots" content="index, follow">
 
-<meta name="author" content="Lenokor Developer"><style>
+<meta name="description"
+    content="تنزيل نظام لينوكور لجميع أنواع أجهزة الكمبيوتر.">
 
-* {
-    box-sizing: border-box;
-}
+<style>
 
-body {
-
-    margin: 0;
-    padding: 30px 15px;
-
-    font-family:
-        "Segoe UI",
-        Tahoma,
-        Arial,
-        sans-serif;
-
-    background: #000000;
-
-    color: #ffffff;
-
-    min-height: 100vh;
-}
-
-
-/* الحاوية الرئيسية */
-
-.container {
-
-    width: 100%;
-
-    max-width: 950px;
-
-    margin: auto;
-
-    background: #050505;
-
-    border: 1px solid #1a1a1a;
-
-    border-radius: 16px;
-
-    padding: 30px;
-
-}
-
-
-/* البانر العلوي */
-
-.top-banner {
-
-    width: 100%;
-
-    height: 190px;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    margin-bottom: 30px;
-
-    border: 1px solid #222222;
-
-    background: #0b0b0b;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-decoration: none;
-
-}
-
-
-/* مكان صورة البانر */
-
-.top-banner img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-}
-
-
-/* إذا لم توجد صورة */
-
-.banner-placeholder {
-
-    color: #777777;
-
-    font-size: 18px;
-
-    text-align: center;
-
-}
-
-
-/* العنوان */
-
-h1 {
-
-    font-size: 2.2rem;
-
-    margin-top: 0;
-
-    margin-bottom: 15px;
-
-    color: #ffffff;
-
-    border-bottom: 1px solid #222222;
-
-    padding-bottom: 15px;
-
-}
-
-
-h2 {
-
-    font-size: 1.35rem;
-
-    color: #3a86ff;
-
-    margin-top: 35px;
-
-    margin-bottom: 15px;
-
-}
-
-
-p {
-
-    color: #cfcfcf;
-
-    line-height: 1.8;
-
-    font-size: 1rem;
-
-}
-
-
-/* صندوق الاتفاقية */
-
-.terms-box {
-
-    width: 100%;
-
-    height: 360px;
-
-    overflow-y: auto;
-
-    background: #080808;
-
-    border: 1px solid #242424;
-
-    border-radius: 8px;
-
-    padding: 22px;
-
-    color: #bdbdbd;
-
-    line-height: 1.9;
-
-    font-size: 0.95rem;
-
-    text-align: right;
-
-}
-
-
-.terms-box::-webkit-scrollbar {
-
-    width: 9px;
-
-}
-
-
-.terms-box::-webkit-scrollbar-track {
-
-    background: #050505;
-
-}
-
-
-.terms-box::-webkit-scrollbar-thumb {
-
-    background: #333333;
-
-    border-radius: 5px;
-
-}
-
-
-/* زر التنزيل */
-
-.download-section {
-
-    text-align: center;
-
-    margin-top: 30px;
-
-    margin-bottom: 40px;
-
-    padding: 30px;
-
-    background: #080808;
-
-    border: 1px solid #202020;
-
-    border-radius: 10px;
-
-}
-
-
-.download-btn {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 14px 38px;
-
-    font-size: 1.1rem;
-
-    font-weight: bold;
-
-    color: #ffffff;
-
-    background: #3a86ff;
-
-    border: none;
-
-    border-radius: 6px;
-
-    cursor: pointer;
-
-    text-decoration: none;
-
-}
-
-
-.download-btn:hover {
-
-    background: #2f75e5;
-
-}
-
-
-.compatibility-note {
-
-    margin-top: 15px;
-
-    color: #00b4d8;
-
-    font-weight: bold;
-
-}
-
-
-.download-info {
-
-    color: #666666;
-
-    font-size: 0.9rem;
-
-}
-
-
-/* الاتفاقيات الإضافية */
-
-.agreements {
-
-    margin-top: 35px;
-
-}
-
-
-.agreement {
-
-    background: #080808;
-
-    border: 1px solid #202020;
-
-    border-radius: 9px;
-
-    padding: 20px;
-
-    margin-bottom: 15px;
-
-}
-
-
-.agreement h3 {
-
-    margin-top: 0;
-
-    color: #ffffff;
-
-    font-size: 1.05rem;
-
-}
-
-
-.agreement p {
-
-    margin-bottom: 0;
-
-    color: #999999;
-
-    line-height: 1.8;
-
-}
-
-
-/* التذييل */
-
-.footer {
-
-    text-align: center;
-
-    margin-top: 40px;
-
-    padding-top: 25px;
-
-    border-top: 1px solid #1c1c1c;
-
-    color: #555555;
-
-    font-size: 0.85rem;
-
-}
-
-
-/* الجوال */
-
-@media (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
 
     body {
-
-        padding: 15px 8px;
-
+        margin: 0;
+        padding: 30px 15px;
+        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+        background: #000000;
+        color: #ffffff;
+        min-height: 100vh;
     }
 
     .container {
-
-        padding: 20px 15px;
-
+        width: 100%;
+        max-width: 950px;
+        margin: auto;
+        background: #050505;
+        border: 1px solid #1a1a1a;
+        border-radius: 16px;
+        padding: 30px;
     }
 
     .top-banner {
+        width: 100%;
+        height: 190px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        border: 1px solid #222222;
+        background: #0b0b0b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
 
-        height: 130px;
-
+    .top-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #ffffff;
+        border-bottom: 1px solid #222222;
+        padding-bottom: 15px;
+    }
 
-        font-size: 1.7rem;
+    h2 {
+        font-size: 1.35rem;
+        color: #3a86ff;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
 
+    p {
+        color: #cfcfcf;
+        line-height: 1.8;
+        font-size: 1rem;
     }
 
     .terms-box {
+        width: 100%;
+        height: 360px;
+        overflow-y: auto;
+        background: #080808;
+        border: 1px solid #242424;
+        border-radius: 8px;
+        padding: 22px;
+        color: #bdbdbd;
+        line-height: 1.9;
+        font-size: 0.95rem;
+    }
 
-        height: 320px;
+    .terms-box::-webkit-scrollbar {
+        width: 9px;
+    }
 
-        padding: 15px;
+    .terms-box::-webkit-scrollbar-track {
+        background: #050505;
+    }
 
+    .terms-box::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 5px;
+    }
+
+    .download-section {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding: 30px;
+        background: #080808;
+        border: 1px solid #202020;
+        border-radius: 10px;
     }
 
     .download-btn {
-
-        width: 100%;
-
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 38px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #ffffff;
+        background: #3a86ff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
     }
 
-}
+    .download-btn:hover {
+        background: #2f75e5;
+    }
 
-</style></head><body><div class="container"><!-- البانر العلوي -->
+    .compatibility-note {
+        margin-top: 15px;
+        color: #00b4d8;
+        font-weight: bold;
+    }
 
-<a
+    .download-info {
+        color: #666666;
+        font-size: 0.9rem;
+    }
+
+    .agreements {
+        margin-top: 35px;
+    }
+
+    .agreement {
+        background: #080808;
+        border: 1px solid #202020;
+        border-radius: 9px;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .agreement h3 {
+        margin-top: 0;
+        color: #ffffff;
+        font-size: 1.05rem;
+    }
+
+    .agreement p {
+        margin-bottom: 0;
+        color: #999999;
+        line-height: 1.8;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 25px;
+        border-top: 1px solid #1c1c1c;
+        color: #555555;
+        font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 15px 8px;
+        }
+
+        .container {
+            padding: 20px 15px;
+        }
+
+        .top-banner {
+            height: 130px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        .terms-box {
+            height: 320px;
+            padding: 15px;
+        }
+
+        .download-btn {
+            width: 100%;
+        }
+    }
+
+</style>
+
+</head><body><div class="container"><a
     class="top-banner"
     href="https://imgur.com/a/zB6y8AU"
     target="_blank"
     rel="noopener noreferrer"
 >
 
-    <!-- ضع رابط صورة البانر المباشر هنا -->
-
     <div class="banner-placeholder">
-
-        بانر لينوكور 900
-
+        <span data-i18n="banner">Lenokor</span>
     </div>
 
 </a>
 
 
-<h1>
-    تنزيل نظام التشغيل لينوكور 900
+<h1 data-i18n="title">
+    تنزيل نظام لينوكور لجميع أنواع الكمبيوتر
 </h1>
 
 
-<p>
-
-    مرحباً بك في صفحة تنزيل نظام التشغيل لينوكور 900.
-    يرجى قراءة اتفاقية الاستخدام والشروط قبل تنزيل النظام.
-
+<p data-i18n="intro">
+    مرحباً بك في صفحة تنزيل نظام لينوكور لجميع أنواع أجهزة الكمبيوتر.
+    يمكنك تنزيل نظام لينوكور من خلال الزر الموجود بالأسفل.
 </p>
 
 
-<!-- الشروط الطويلة -->
-
-<h2>
-    اتفاقية ترخيص واستخدام لينوكور 900
+<h2 data-i18n="termsTitle">
+    اتفاقية ترخيص واستخدام لينوكور
 </h2>
 
 
 <div class="terms-box">
 
-
-    <strong>إشعار الاستخدام:</strong>
+    <strong data-i18n="term1Title">
+        إشعار الاستخدام
+    </strong>
 
     <br>
 
-    باستخدامك أو تنزيلك أو تثبيتك لنظام لينوكور 900،
-    فإنك تقر بأنك قرأت الشروط التالية وفهمتها.
+    <span data-i18n="term1">
+        باستخدامك أو تنزيلك لنظام لينوكور فإنك تقر بأنك قرأت
+        الشروط التالية وفهمتها.
+    </span>
 
     <br><br>
 
 
-    <strong>1. الترخيص:</strong>
+    <strong data-i18n="term2Title">
+        1. الترخيص
+    </strong>
 
     <br>
 
-    يتم توفير نظام لينوكور 900 للاستخدام وفقاً لشروط
-    المطور المحددة في هذه الصفحة.
+    <span data-i18n="term2">
+        يتم توفير نظام لينوكور للاستخدام وفقاً لشروط المطور
+        المحددة في هذه الصفحة.
+    </span>
 
     <br><br>
 
 
-    <strong>2. الاستخدام الشخصي:</strong>
+    <strong data-i18n="term3Title">
+        2. الاستخدام
+    </strong>
 
     <br>
 
-    يسمح للمستخدم بتنزيل النظام وتجربته واستخدامه
-    على أجهزته المتوافقة.
+    <span data-i18n="term3">
+        يسمح للمستخدم بتنزيل النظام وتجربته واستخدامه
+        على أجهزة الكمبيوتر الخاصة به.
+    </span>
 
     <br><br>
 
 
-    <strong>3. إعادة التوزيع:</strong>
+    <strong data-i18n="term4Title">
+        3. إعادة التوزيع
+    </strong>
 
     <br>
 
-    لا يسمح بإعادة بيع ملفات النظام أو تقديمها
-    على أنها منتج مختلف دون الحصول على إذن من المطور.
+    <span data-i18n="term4">
+        لا يسمح بإعادة بيع ملفات النظام أو تقديمها
+        على أنها منتج مختلف دون إذن من المطور.
+    </span>
 
     <br><br>
 
 
-    <strong>4. تعديل الملفات:</strong>
+    <strong data-i18n="term5Title">
+        4. تعديل الملفات
+    </strong>
 
     <br>
 
-    يمكن للمطورين دراسة ملفات النظام لأغراض تعليمية
-    وتطويرية وفقاً للحقوق الممنوحة لهم.
+    <span data-i18n="term5">
+        يمكن للمطورين دراسة ملفات النظام لأغراض تعليمية
+        وتطويرية وفقاً للحقوق المسموح بها.
+    </span>
 
     <br><br>
 
 
-    <strong>5. المسؤولية:</strong>
+    <strong data-i18n="term6Title">
+        5. المسؤولية
+    </strong>
 
     <br>
 
-    يستخدم النظام على مسؤولية المستخدم.
-    يجب الاحتفاظ بنسخة احتياطية من الملفات المهمة
-    قبل إجراء أي عملية تثبيت أو تعديل.
+    <span data-i18n="term6">
+        يستخدم النظام على مسؤولية المستخدم، وينصح دائماً
+        بإنشاء نسخة احتياطية من الملفات المهمة.
+    </span>
 
     <br><br>
 
 
-    <strong>6. توافق الأجهزة:</strong>
+    <strong data-i18n="term7Title">
+        6. توافق الأجهزة
+    </strong>
 
     <br>
 
-    قد تختلف تجربة النظام من جهاز إلى آخر
-    بسبب اختلاف العتاد والتعريفات وإعدادات الجهاز.
+    <span data-i18n="term7">
+        تم تصميم لينوكور ليكون مناسباً لمختلف أنواع أجهزة الكمبيوتر،
+        وقد تختلف تجربة الاستخدام حسب مواصفات الجهاز.
+    </span>
 
     <br><br>
 
 
-    <strong>7. التحديثات:</strong>
+    <strong data-i18n="term8Title">
+        7. التحديثات
+    </strong>
 
     <br>
 
-    يمكن إصدار تحديثات أو تغييرات مستقبلية
-    على النظام دون ضمان توفر كل الخصائص في جميع الأجهزة.
+    <span data-i18n="term8">
+        قد يتم إصدار تحديثات وإصدارات جديدة من لينوكور
+        في المستقبل.
+    </span>
 
     <br><br>
 
 
-    <strong>8. ملفات الطرف الثالث:</strong>
+    <strong data-i18n="term9Title">
+        8. ملفات الطرف الثالث
+    </strong>
 
     <br>
 
-    قد يحتوي النظام أو الموقع على مكونات أو موارد
-    تابعة لأطراف أخرى وتخضع تلك المكونات لشروطها الخاصة.
+    <span data-i18n="term9">
+        قد تحتوي بعض مكونات النظام على ملفات أو موارد
+        تابعة لأطراف أخرى وتخضع لتراخيصها الخاصة.
+    </span>
 
     <br><br>
 
 
-    <strong>9. الخلفيات:</strong>
+    <strong data-i18n="term10Title">
+        9. النسخ الاحتياطي
+    </strong>
 
     <br>
 
-    بعض الخلفيات والموارد البصرية قد تكون مخصصة
-    للاستخدام داخل واجهة لينوكور فقط.
+    <span data-i18n="term10">
+        ينصح المستخدم بحفظ نسخة احتياطية من بياناته
+        قبل تثبيت أي نظام تشغيل.
+    </span>
 
     <br><br>
 
 
-    <strong>10. التطبيقات:</strong>
+    <strong data-i18n="term11Title">
+        10. قبول الاتفاقية
+    </strong>
 
     <br>
 
-    التطبيقات الموجودة داخل النظام أو المرتبطة به
-    قد تكون مستقلة عن مشروع لينوكور وتخضع لتراخيصها الخاصة.
-
-    <br><br>
-
-
-    <strong>11. الأمان:</strong>
-
-    <br>
-
-    يجب على المستخدم تنزيل النظام من مصدر موثوق
-    والتحقق من الملفات قبل استخدامها.
-
-    <br><br>
-
-
-    <strong>12. النسخ الاحتياطي:</strong>
-
-    <br>
-
-    ينصح بعمل نسخة احتياطية كاملة للبيانات المهمة
-    قبل تثبيت أي نظام تشغيل.
-
-    <br><br>
-
-
-    <strong>13. الاستخدام غير القانوني:</strong>
-
-    <br>
-
-    لا يجوز استخدام النظام أو الموقع لأغراض مخالفة
-    للقوانين والأنظمة المعمول بها.
-
-    <br><br>
-
-
-    <strong>14. الملكية:</strong>
-
-    <br>
-
-    جميع أسماء المشروع والشعارات والواجهات الخاصة
-    بلينوكور تبقى مرتبطة بالمشروع ومطوره.
-
-    <br><br>
-
-
-    <strong>15. عدم الضمان:</strong>
-
-    <br>
-
-    يتم توفير النظام كما هو، وقد لا يعمل بالشكل
-    المتوقع على جميع الأجهزة.
-
-    <br><br>
-
-
-    <strong>16. التغييرات:</strong>
-
-    <br>
-
-    يحتفظ المطور بالحق في تحديث أو تعديل أو إزالة
-    أي جزء من النظام أو الموقع.
-
-    <br><br>
-
-
-    <strong>17. تنزيل الملف:</strong>
-
-    <br>
-
-    يتحمل المستخدم مسؤولية التأكد من أن جهازه
-    قادر على التعامل مع ملف النظام قبل استخدامه.
-
-    <br><br>
-
-
-    <strong>18. الاستخدام التجريبي:</strong>
-
-    <br>
-
-    يمكن استخدام النظام لأغراض التجربة والتعلم
-    والتطوير ضمن الحدود المسموح بها.
-
-    <br><br>
-
-
-    <strong>19. حماية البيانات:</strong>
-
-    <br>
-
-    لا ينبغي للمستخدم وضع معلومات شخصية حساسة
-    داخل ملفات النظام أو صفحات الاختبار.
-
-    <br><br>
-
-
-    <strong>20. قبول الاتفاقية:</strong>
-
-    <br>
-
-    بالضغط على زر التنزيل، يقر المستخدم بأنه اطلع
-    على هذه الشروط وفهم طبيعة النظام قبل تنزيله.
-
+    <span data-i18n="term11">
+        بتنزيل النظام، يقر المستخدم بأنه اطلع على شروط
+        الاستخدام وفهم طبيعة النظام.
+    </span>
 
 </div>
 
 
-<!-- زر التنزيل -->
-
 <div class="download-section">
-
 
     <a
         href="enokor900_system.iso"
         download="enokor900_system.iso"
         class="download-btn"
+        data-i18n="download"
     >
-
-        تنزيل لينوكور 900
-
+        تنزيل نظام لينوكور
     </a>
 
-
-    <div class="compatibility-note">
-
-        متوافق مع جميع أنواع الأجهزة
-
+    <div
+        class="compatibility-note"
+        data-i18n="compatibility"
+    >
+        لجميع أنواع أجهزة الكمبيوتر
     </div>
 
-
-    <p class="download-info">
-
+    <p
+        class="download-info"
+        data-i18n="downloadInfo"
+    >
         سيبدأ تنزيل ملف النظام عند الضغط على الزر.
-
     </p>
-
 
 </div>
 
 
-<!-- الاتفاقيات الإضافية -->
-
 <div class="agreements">
 
-
-    <h2>
+    <h2 data-i18n="agreementsTitle">
         الاتفاقيات الإضافية
     </h2>
 
 
     <div class="agreement">
 
-        <h3>
+        <h3 data-i18n="a1Title">
             اتفاقية الاستخدام
         </h3>
 
-        <p>
-            باستخدام الموقع، يوافق المستخدم على استخدام
-            الخدمات والملفات المتاحة بطريقة مسؤولة.
+        <p data-i18n="a1">
+            يوافق المستخدم على استخدام النظام بطريقة مسؤولة
+            ووفقاً للقوانين والأنظمة المعمول بها.
         </p>
 
     </div>
@@ -703,11 +440,11 @@ p {
 
     <div class="agreement">
 
-        <h3>
+        <h3 data-i18n="a2Title">
             اتفاقية التوزيع
         </h3>
 
-        <p>
+        <p data-i18n="a2">
             يمنع تقديم ملفات لينوكور على أنها نظام مختلف
             أو نسب المشروع إلى جهة أخرى.
         </p>
@@ -717,13 +454,13 @@ p {
 
     <div class="agreement">
 
-        <h3>
+        <h3 data-i18n="a3Title">
             اتفاقية المطورين
         </h3>
 
-        <p>
+        <p data-i18n="a3">
             يمكن للمطورين استخدام النظام لأغراض التعلم
-            والتجربة والتطوير وفقاً لشروط المشروع.
+            والتجربة والتطوير.
         </p>
 
     </div>
@@ -731,72 +468,320 @@ p {
 
     <div class="agreement">
 
-        <h3>
-            اتفاقية الملفات
-        </h3>
-
-        <p>
-            يجب التعامل مع ملفات النظام بحذر وعدم حذف
-            أو تعديل الملفات الأساسية إذا كان ذلك قد
-            يؤدي إلى عدم استقرار النظام.
-        </p>
-
-    </div>
-
-
-    <div class="agreement">
-
-        <h3>
-            اتفاقية الدعم
-        </h3>
-
-        <p>
-            قد يختلف الدعم المتاح حسب إصدار النظام
-            ونوع الجهاز وإصدار الملفات المستخدمة.
-        </p>
-
-    </div>
-
-
-    <div class="agreement">
-
-        <h3>
-            اتفاقية التحديثات المستقبلية
-        </h3>
-
-        <p>
-            قد يتم إصدار إصدارات جديدة من لينوكور
-            تحتوي على تغييرات وتحسينات وخصائص جديدة.
-        </p>
-
-    </div>
-
-
-    <div class="agreement">
-
-        <h3>
+        <h3 data-i18n="a4Title">
             إقرار المستخدم
         </h3>
 
-        <p>
-            يقر المستخدم بأنه مسؤول عن بياناته وملفاته
-            وأنه قام بقراءة المعلومات المتوفرة قبل تنزيل النظام.
+        <p data-i18n="a4">
+            يقر المستخدم بأنه قرأ المعلومات المتوفرة
+            قبل تنزيل النظام.
         </p>
 
     </div>
 
-
 </div>
 
 
-<div class="footer">
+<div class="footer" data-i18n="footer">
 
-    لينوكور 900 — Lenokor OS 900
-
-    <br>
-
-    جميع الحقوق محفوظة للمطور
+    لينوكور 900 — نظام تشغيل لجميع أنواع أجهزة الكمبيوتر
 
 </div>
 
-</div></body></html>
+</div><script>
+
+const translations = {
+
+    ar: {
+
+        banner: "لينوكور",
+
+        title: "تنزيل نظام لينوكور لجميع أنواع الكمبيوتر",
+
+        intro:
+        "مرحباً بك في صفحة تنزيل نظام لينوكور لجميع أنواع أجهزة الكمبيوتر. يمكنك تنزيل نظام لينوكور من خلال الزر الموجود بالأسفل.",
+
+        termsTitle:
+        "اتفاقية ترخيص واستخدام لينوكور",
+
+        term1Title:
+        "إشعار الاستخدام",
+
+        term1:
+        "باستخدامك أو تنزيلك لنظام لينوكور فإنك تقر بأنك قرأت الشروط التالية وفهمتها.",
+
+        term2Title:
+        "1. الترخيص",
+
+        term2:
+        "يتم توفير نظام لينوكور للاستخدام وفقاً لشروط المطور المحددة في هذه الصفحة.",
+
+        term3Title:
+        "2. الاستخدام",
+
+        term3:
+        "يسمح للمستخدم بتنزيل النظام وتجربته واستخدامه على أجهزة الكمبيوتر الخاصة به.",
+
+        term4Title:
+        "3. إعادة التوزيع",
+
+        term4:
+        "لا يسمح بإعادة بيع ملفات النظام أو تقديمها على أنها منتج مختلف دون إذن من المطور.",
+
+        term5Title:
+        "4. تعديل الملفات",
+
+        term5:
+        "يمكن للمطورين دراسة ملفات النظام لأغراض تعليمية وتطويرية وفقاً للحقوق المسموح بها.",
+
+        term6Title:
+        "5. المسؤولية",
+
+        term6:
+        "يستخدم النظام على مسؤولية المستخدم، وينصح دائماً بإنشاء نسخة احتياطية من الملفات المهمة.",
+
+        term7Title:
+        "6. توافق الأجهزة",
+
+        term7:
+        "تم تصميم لينوكور ليكون مناسباً لمختلف أنواع أجهزة الكمبيوتر، وقد تختلف تجربة الاستخدام حسب مواصفات الجهاز.",
+
+        term8Title:
+        "7. التحديثات",
+
+        term8:
+        "قد يتم إصدار تحديثات وإصدارات جديدة من لينوكور في المستقبل.",
+
+        term9Title:
+        "8. ملفات الطرف الثالث",
+
+        term9:
+        "قد تحتوي بعض مكونات النظام على ملفات أو موارد تابعة لأطراف أخرى وتخضع لتراخيصها الخاصة.",
+
+        term10Title:
+        "9. النسخ الاحتياطي",
+
+        term10:
+        "ينصح المستخدم بحفظ نسخة احتياطية من بياناته قبل تثبيت أي نظام تشغيل.",
+
+        term11Title:
+        "10. قبول الاتفاقية",
+
+        term11:
+        "بتنزيل النظام، يقر المستخدم بأنه اطلع على شروط الاستخدام وفهم طبيعة النظام.",
+
+        download:
+        "تنزيل نظام لينوكور",
+
+        compatibility:
+        "لجميع أنواع أجهزة الكمبيوتر",
+
+        downloadInfo:
+        "سيبدأ تنزيل ملف النظام عند الضغط على الزر.",
+
+        agreementsTitle:
+        "الاتفاقيات الإضافية",
+
+        a1Title:
+        "اتفاقية الاستخدام",
+
+        a1:
+        "يوافق المستخدم على استخدام النظام بطريقة مسؤولة ووفقاً للقوانين والأنظمة المعمول بها.",
+
+        a2Title:
+        "اتفاقية التوزيع",
+
+        a2:
+        "يمنع تقديم ملفات لينوكور على أنها نظام مختلف أو نسب المشروع إلى جهة أخرى.",
+
+        a3Title:
+        "اتفاقية المطورين",
+
+        a3:
+        "يمكن للمطورين استخدام النظام لأغراض التعلم والتجربة والتطوير.",
+
+        a4Title:
+        "إقرار المستخدم",
+
+        a4:
+        "يقر المستخدم بأنه قرأ المعلومات المتوفرة قبل تنزيل النظام.",
+
+        footer:
+        "لينوكور 900 — نظام تشغيل لجميع أنواع أجهزة الكمبيوتر"
+    },
+
+
+    en: {
+
+        banner: "Lenokor",
+
+        title: "Download Lenokor for All Types of Computers",
+
+        intro:
+        "Welcome to the Lenokor download page for all types of computers. Download Lenokor using the button below.",
+
+        termsTitle:
+        "Lenokor License and Usage Agreement",
+
+        term1Title:
+        "Usage Notice",
+
+        term1:
+        "By downloading or using Lenokor, you acknowledge that you have read and understood these terms.",
+
+        term2Title:
+        "1. License",
+
+        term2:
+        "Lenokor is provided for use according to the developer's terms listed on this page.",
+
+        term3Title:
+        "2. Usage",
+
+        term3:
+        "Users may download, test and use the system on their computers.",
+
+        term4Title:
+        "3. Redistribution",
+
+        term4:
+        "Selling or presenting Lenokor files as a different product without permission is not allowed.",
+
+        term5Title:
+        "4. File Modification",
+
+        term5:
+        "Developers may study system files for educational and development purposes within the permitted rights.",
+
+        term6Title:
+        "5. Responsibility",
+
+        term6:
+        "The system is used at the user's own responsibility. Backing up important files is recommended.",
+
+        term7Title:
+        "6. Device Compatibility",
+
+        term7:
+        "Lenokor is designed for different types of computers. The experience may vary depending on hardware.",
+
+        term8Title:
+        "7. Updates",
+
+        term8:
+        "New updates and versions of Lenokor may be released in the future.",
+
+        term9Title:
+        "8. Third-Party Files",
+
+        term9:
+        "Some components may contain third-party resources that are subject to their own licenses.",
+
+        term10Title:
+        "9. Backup",
+
+        term10:
+        "Users are advised to back up their data before installing any operating system.",
+
+        term11Title:
+        "10. Agreement Acceptance",
+
+        term11:
+        "By downloading the system, the user acknowledges that they have read and understood the usage terms.",
+
+        download:
+        "Download Lenokor",
+
+        compatibility:
+        "For all types of computers",
+
+        downloadInfo:
+        "The system file will begin downloading when you press the button.",
+
+        agreementsTitle:
+        "Additional Agreements",
+
+        a1Title:
+        "Usage Agreement",
+
+        a1:
+        "Users agree to use the system responsibly and according to applicable laws.",
+
+        a2Title:
+        "Distribution Agreement",
+
+        a2:
+        "Lenokor files must not be presented as a different system or attributed to another party.",
+
+        a3Title:
+        "Developer Agreement",
+
+        a3:
+        "Developers may use the system for learning, testing and development purposes.",
+
+        a4Title:
+        "User Acknowledgment",
+
+        a4:
+        "The user acknowledges that they have read the available information before downloading the system.",
+
+        footer:
+        "Lenokor 900 — Operating system for all types of computers"
+    }
+
+};
+
+
+function setLanguage() {
+
+    let language =
+        navigator.language ||
+        navigator.userLanguage ||
+        "en";
+
+    language =
+        language.toLowerCase();
+
+    let selectedLanguage =
+        language.startsWith("ar")
+        ? "ar"
+        : "en";
+
+
+    document.documentElement.lang =
+        selectedLanguage;
+
+
+    document.documentElement.dir =
+        selectedLanguage === "ar"
+        ? "rtl"
+        : "ltr";
+
+
+    const texts =
+        translations[selectedLanguage];
+
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+            const key =
+                element.getAttribute("data-i18n");
+
+            if (texts[key]) {
+
+                element.textContent =
+                    texts[key];
+
+            }
+
+        });
+
+}
+
+
+setLanguage();
+
+</script></body>
+</html>
