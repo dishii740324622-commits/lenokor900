@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>تنزيل نظام لينوكور لجميع أنواع الكمبيوتر</title>
-
-    <meta name="description"
-          content="الموقع الرسمي لتنزيل نظام لينوكور لجميع أنواع أجهزة الكمبيوتر.">
-
-    <meta name="author" content="مطور لينوكور">
-
-    <!-- بداية إضافة أيقونة الموقع (Favicon) -->
-    <link rel="icon" type="image/x-icon" href="https://imgur.com/a/ZKfaVr1">
-    <link rel="shortcut icon" type="image/x-icon" href="https://imgur.com/a/ZKfaVr1">
-    <link rel="apple-touch-icon" href="https://imgur.com/a/ZKfaVr1">
-    <!-- نهاية إضافة أيقونة الموقع -->
-
-
+    <title>LinoCore OS - الموقع الرسمي</title>
+    <meta name="description" content="الموقع الرسمي لنظام التشغيل الآمن LinoCore المخصص للهواتف الذكية وأجهزة الكمبيوتر.">
+    <meta name="author" content="LinoCore Developer">
+    <link rel="icon" type="image/x-icon" href="https://imgur.com">
+    <link rel="shortcut icon" type="image/x-icon" href="https://imgur.com">
+    <link rel="apple-touch-icon" href="https://imgur.com">
     <style>
-
         * {
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             margin: 0;
             padding: 0;
@@ -38,680 +23,241 @@
             color: #ffffff;
             font-family: Arial, Tahoma, sans-serif;
             line-height: 1.8;
-            top: 0 !important; /* لإلغاء الفراغ الذي تسببه أداة الترجمة */
         }
-
-        /* إخفاء شريط جوجل للترجمة للحفاظ على مظهر التصميم */
-        .goog-te-banner-frame {
-            display: none !important;
-        }
-        #google_translate_element {
-            display: none;
-        }
-
-
         .page {
             width: 100%;
             max-width: 1000px;
             margin: auto;
             padding: 25px 15px 60px;
         }
-
-
         .glass-container {
             background: #0d0d0d;
             border: 1px solid #222222;
             border-radius: 14px;
             padding: 30px;
         }
-
-
         h1 {
             text-align: center;
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin: 0 0 15px;
             color: #ffffff;
+            letter-spacing: 1px;
         }
-
-
         .subtitle {
             text-align: center;
             color: #aaaaaa;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
         }
-
-
-        /* البانر */
-
         .banner {
             width: 100%;
             min-height: 120px;
-
-            background: #151515;
-
-            border: 1px solid #292929;
-            border-radius: 10px;
-
-            margin-bottom: 30px;
-
+            background: #111111;
+            border: 1px solid #222222;
+            border-radius: 12px;
+            margin-bottom: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-
             text-align: center;
-
             padding: 25px;
         }
-
-
         .banner-text {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-
-        /* العناوين */
-
-        .section-title {
             font-size: 1.3rem;
-            margin: 25px 0 12px;
+            font-weight: bold;
+            color: #00F0FF;
+        }
+        .section-title {
+            font-size: 1.4rem;
+            margin: 35px 0 15px;
+            color: #ffffff;
+            border-bottom: 1px solid #222222;
+            padding-bottom: 8px;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .app-card {
+            background: #050505;
+            border: 1px solid #1c1c1c;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: border 0.3s ease;
+        }
+        .app-card:hover {
+            border-color: #00F0FF;
+        }
+        .app-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.1rem;
             color: #ffffff;
         }
-
-
-        /* الشروط */
-
-        .terms-box {
-            background: #080808;
-
-            border: 1px solid #252525;
-            border-radius: 8px;
-
-            padding: 20px;
-
-            height: 360px;
-
-            overflow-y: auto;
+        .app-card p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #888888;
         }
-
-
+        .terms-box {
+            background: #050505;
+            border: 1px solid #1c1c1c;
+            border-radius: 10px;
+            padding: 25px;
+            height: 300px;
+            overflow-y: auto;
+            margin-bottom: 40px;
+        }
         .terms-box ol {
             margin: 0;
-            padding-right: 25px;
+            padding-right: 20px;
         }
-
-
         .terms-box li {
             margin-bottom: 14px;
-            color: #cccccc;
-        }
-
-
-        /* التواصل */
-
-        .developer-contact {
-            text-align: center;
-
-            margin-top: 30px;
-            margin-bottom: 22px;
-
-            padding: 20px;
-
-            background: #0b0b0b;
-
-            border: 1px solid #242424;
-            border-radius: 10px;
-        }
-
-
-        .developer-contact-title {
-            display: block;
-
-            color: #ffffff;
-
-            font-size: 1.1rem;
-            font-weight: bold;
-
-            text-decoration: none;
-
-            margin-bottom: 7px;
-        }
-
-
-        .developer-contact-title:hover {
-            text-decoration: underline;
-        }
-
-
-        /* البريد */
-
-        .developer-email {
-            display: block;
-
-            margin-top: 6px;
-
-            color: #888888;
-
+            color: #aaaaaa;
             font-size: 0.95rem;
-
-            direction: ltr;
-
-            text-decoration: none;
-
-            cursor: pointer;
         }
-
-
-        .developer-email:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-
-        .developer-email:active {
-            text-decoration: underline;
-        }
-
-
-        /* التنزيل */
-
-        .download-section {
-            text-align: center;
-
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
             margin-top: 20px;
-
-            padding: 30px 15px;
-
-            background: #0d0d0d;
-
-            border: 1px solid #242424;
-
-            border-radius: 10px;
         }
-
-
-        /* زر التنزيل */
-
+        .download-box {
+            width: 100%;
+            max-width: 450px;
+            padding: 25px 20px;
+            background: #050505;
+            border: 1px solid #1c1c1c;
+            border-radius: 12px;
+            text-align: center;
+        }
         .download-btn {
             display: inline-flex;
-
             align-items: center;
             justify-content: center;
-
-            padding: 14px 35px;
-
-            font-size: 1.1rem;
+            width: 100%;
+            padding: 16px 30px;
+            font-size: 1.15rem;
             font-weight: bold;
-
-            color: #ffffff;
-
-            background: #3a86ff;
-
             border: none;
-
-            border-radius: 6px;
-
+            border-radius: 8px;
             cursor: pointer;
-
             text-decoration: none;
-
             transition: background 0.2s ease;
         }
-
-
-        .download-btn:hover {
+        .btn-pc {
+            background: #3a86ff;
+            color: #ffffff;
+        }
+        .btn-pc:hover {
             background: #2f75e5;
         }
-
-
+        .btn-mobile {
+            background: #00F0FF;
+            color: #000000;
+        }
+        .btn-mobile:hover {
+            background: #00c8d4;
+        }
+        .mobile-notice {
+            margin-top: 12px;
+            color: #777777;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
         .compatibility-note {
             margin-top: 15px;
-
-            color: #ffffff;
-
-            font-size: 1rem;
-        }
-
-
-        .download-info {
-            color: #777777;
-
-            font-size: 0.9rem;
-
-            margin-top: 8px;
-        }
-
-
-        /* الاتفاقيات */
-
-        .agreements {
-            margin-top: 30px;
-        }
-
-
-        .agreement {
-            background: #0b0b0b;
-
-            border: 1px solid #222222;
-
-            border-radius: 8px;
-
-            padding: 18px;
-
-            margin-bottom: 12px;
-        }
-
-
-        .agreement h3 {
-            margin: 0 0 8px;
-
-            font-size: 1rem;
-
-            color: #ffffff;
-        }
-
-
-        .agreement p {
-            margin: 0;
-
             color: #aaaaaa;
-
             font-size: 0.9rem;
         }
-
-
-        /* أسفل الموقع */
-
         footer {
             text-align: center;
-
-            margin-top: 35px;
-
-            color: #555555;
-
+            margin-top: 40px;
+            color: #444444;
             font-size: 0.85rem;
         }
-
-
-        /* الجوال */
-
         @media (max-width: 600px) {
-
             .page {
-                padding: 12px 10px 40px;
+                padding: 15px 10px 40px;
             }
-
-
             .glass-container {
-                padding: 18px 12px;
-
-                border-radius: 10px;
+                padding: 20px 15px;
             }
-
-
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
-
-
             .banner {
                 min-height: 100px;
-
-                padding: 18px;
+                padding: 15px;
             }
-
-
-            .terms-box {
-                height: 300px;
-            }
-
-
-            .download-btn {
-                width: 100%;
-
-                max-width: 330px;
-            }
-
         }
-
     </style>
-
 </head>
-
-
 <body>
-
-<!-- عنصر للترجمة التلقائية -->
-<div id="google_translate_element"></div>
-
-
 <div class="page">
-
-
     <div class="glass-container">
-
-
-        <!-- البانر -->
-
         <div class="banner">
-
             <div class="banner-text">
-
-                لينوكور 900
-
+                LinoCore 900
                 <br>
-
-                نظام تشغيل لجميع أنواع أجهزة الكمبيوتر
-
+                نظام تشغيل متكامل لجميع أنواع الأجهزة
             </div>
-
         </div>
 
+        <h1>نظام التشغيل LinoCore</h1>
+        <div class="subtitle">البوابة الرسمية الآمنة لتحميل التحديثات وحزم البرامج المخصصة</div>
 
-        <!-- العنوان -->
-
-        <h1>
-            تنزيل نظام لينوكور لجميع أنواع الكمبيوتر
-        </h1>
-
-
-        <div class="subtitle">
-
-            الموقع الرسمي لتنزيل نظام لينوكور
-
+        <h2 class="section-title">التطبيقات المدمجة والأنظمة الحيوية</h2>
+        <div class="apps-grid">
+            <div class="app-card">
+                <h3>Settings</h3>
+                <p>إدارة تكوين البيئة والأمان</p>
+            </div>
+            <div class="app-card">
+                <h3>FileManager</h3>
+                <p>تصفح وإدارة الملفات والتقسيمات</p>
+            </div>
+            <div class="app-card">
+                <h3>AppStore</h3>
+                <p>متجر تنزيل وإدارة الحزم المعتمدة</p>
+            </div>
+            <div class="app-card">
+                <h3>Google Chrome</h3>
+                <p>تصفح شبكي سريع ومستقر</p>
+            </div>
         </div>
 
-
-        <!-- الشروط -->
-
-        <h2 class="section-title">
-
-            شروط استخدام النظام
-
-        </h2>
-
-
+        <h2 class="section-title">اتفاقية ترخيص الاستخدام والملكية</h2>
         <div class="terms-box">
-
             <ol>
-
-                <li>
-                    باستخدامك لهذا النظام فإنك توافق على جميع الشروط والأحكام الموجودة في هذه الصفحة.
-                </li>
-
-                <li>
-                    النظام مقدم للاستخدام على أجهزة الكمبيوتر المتوافقة.
-                </li>
-
-                <li>
-                    يجب على المستخدم التأكد من أن لديه نسخة احتياطية من ملفاته المهمة قبل تثبيت النظام.
-                </li>
-
-                <li>
-                    المستخدم مسؤول عن اختيار طريقة التثبيت المناسبة لجهازه.
-                </li>
-
-                <li>
-                    لا يتحمل المطور مسؤولية فقدان البيانات الناتج عن سوء استخدام النظام.
-                </li>
-
-                <li>
-                    لا تقم بإيقاف تشغيل الجهاز أثناء عملية التثبيت.
-                </li>
-
-                <li>
-                    لا تقم بتعديل ملفات النظام بطريقة قد تؤدي إلى تعطله.
-                </li>
-
-                <li>
-                    يسمح باستخدام النظام للأغراض الشخصية.
-                </li>
-
-                <li>
-                    يمنع إعادة بيع ملفات النظام دون إذن من المطور.
-                </li>
-
-                <li>
-                    يمنع تقديم النظام على أنه نظام من تطوير جهة أخرى.
-                </li>
-
-                <li>
-                    جميع حقوق اسم لينوكور محفوظة للمطور.
-                </li>
-
-                <li>
-                    يمكن للمطور تحديث النظام أو تغيير محتوياته في أي وقت.
-                </li>
-
-                <li>
-                    قد تختلف طريقة تشغيل النظام من جهاز إلى آخر.
-                </li>
-
-                <li>
-                    توافق النظام مع جميع الأجهزة لا يعني أن جميع الأجهزة ستعمل بنفس الأداء.
-                </li>
-
-                <li>
-                    يجب استخدام ملفات النظام من المصادر الرسمية فقط.
-                </li>
-
-                <li>
-                    لا تستخدم ملفات مجهولة المصدر مع النظام.
-                </li>
-
-                <li>
-                    يتحمل المستخدم مسؤولية أي تعديلات يجريها على جهازه.
-                </li>
-
-                <li>
-                    لا يتحمل المطور مسؤولية الأعطال الناتجة عن استخدام أدوات خارجية.
-                </li>
-
-                <li>
-                    تحميل النظام يعني موافقة المستخدم على هذه الشروط.
-                </li>
-
-                <li>
-                    يمكن تحديث هذه الشروط عند إصدار نسخ جديدة من النظام.
-                </li>
-
+                <li>باستخدامك أو تحميلك لهذا النظام فإنك توافق على كافة شروط الترخيص والملكية الفكرية المبينة.</li>
+                <li>يمنع منعاً باتاً فحص ملفات النظام، أو محاولة تفكيك حزم البرمجيات، أو القيام بأي عمليات هندسة عكسية.</li>
+                <li>النسخة مرخصة للاستخدام الشخصي المباشر فقط من خلال قنوات التوزيع وموقع التحميل الرسمي المعتمد.</li>
+                <li>المطور غير مسؤول عن أي فقدان في البيانات أو تلف ناتج عن سوء التثبيت خارج الأدوات المحددة.</li>
+                <li>لا يجوز تعديل أو إعادة بيع أي جزء من مكونات النظام دون تصريح كتابي مسبق من المالك وصاحب الحق القانوني.</li>
             </ol>
-
         </div>
 
-
-        <!-- التواصل مع المطور -->
-
-        <div class="developer-contact">
-
-            <a
-                class="developer-contact-title"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=dishii740324622@gmail.com"
-                target="_blank"
-                rel="noopener"
-            >
-                التواصل مع المطور
-            </a>
-
-
-            <a
-                class="developer-email"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=dishii740324622@gmail.com"
-                target="_blank"
-                rel="noopener"
-            >
-                dishii740324622@gmail.com
-            </a>
-
+        <h2 class="section-title">قسم تنزيل النظام</h2>
+        <div class="download-container">
+            <div class="download-box">
+                <a href="#" class="download-btn btn-pc">تنزيل نظام لينوكور للكمبيوتر</a>
+                <div class="compatibility-note">متوافق مع معمارية أجهزة الحواسب الآلية المحددة</div>
+            </div>
+            <div class="download-box">
+                <a href="#" class="download-btn btn-mobile">تنزيل نظام لينوكور للجوال</a>
+                <div class="mobile-notice">هام : لاجهزة Android 13 Go فقط</div>
+            </div>
         </div>
-
-
-        <!-- التنزيل -->
-
-        <div class="download-section">
-
-            <a
-                href="enokor900_system.iso"
-                download="enokor900_system.iso"
-                class="download-btn"
-            >
-                تنزيل نظام لينوكور
-            </a>
-
-
-            <div class="compatibility-note">
-
-                لجميع أنواع أجهزة الكمبيوتر
-
-            </div>
-
-
-            <p class="download-info">
-
-                سيبدأ تنزيل ملف النظام عند الضغط على الزر.
-
-            </p>
-
-        </div>
-
-
-        <!-- الاتفاقيات -->
-
-        <div class="agreements">
-
-
-            <h2 class="section-title">
-
-                الاتفاقيات الإضافية
-
-            </h2>
-
-
-            <div class="agreement">
-
-                <h3>
-                    اتفاقية الاستخدام
-                </h3>
-
-                <p>
-                    باستخدام النظام فإنك توافق على استخدامه بطريقة مسؤولة ووفق القوانين المعمول بها.
-                </p>
-
-            </div>
-
-
-            <div class="agreement">
-
-                <h3>
-                    اتفاقية الملفات
-                </h3>
-
-                <p>
-                    يجب عدم تغيير ملفات النظام الأساسية بطريقة قد تسبب تلف النظام أو عدم تشغيله.
-                </p>
-
-            </div>
-
-
-            <div class="agreement">
-
-                <h3>
-                    اتفاقية التوزيع
-                </h3>
-
-                <p>
-                    يسمح بمشاركة رابط الموقع الرسمي، ويمنع إعادة بيع ملفات النظام دون إذن.
-                </p>
-
-            </div>
-
-
-            <div class="agreement">
-
-                <h3>
-                    اتفاقية الدعم
-                </h3>
-
-                <p>
-                    يمكن التواصل مع المطور عبر البريد الإلكتروني الموجود في الموقع للاستفسارات والملاحظات.
-                </p>
-
-            </div>
-
-
-            <div class="agreement">
-
-                <h3>
-                    اتفاقية التحديثات
-                </h3>
-
-                <p>
-                    قد يتم إصدار تحديثات وإصدارات جديدة من لينوكور مستقبلًا.
-                </p>
-
-            </div>
-
-
-            <div class="agreement">
-
-                <h3>
-                    اتفاقية المسؤولية
-                </h3>
-
-                <p>
-                    المستخدم مسؤول عن جهازه وملفاته ونسخه الاحتياطية قبل تثبيت النظام.
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- نهاية الموقع -->
 
         <footer>
-
-            لينوكور 900
-
-            <br>
-
-            جميع الحقوق محفوظة للمطور
-
+            حقوق الملكية والنشر © 2026 مشروع LinoCore. كافة الحقوق محفوظة.
         </footer>
-
-
     </div>
-
 </div>
-
-<!-- كود الترجمة التلقائية بحسب لغة المتصفح -->
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'ar',
-      autoDisplay: false
-    }, 'google_translate_element');
-
-    // كشف لغة متصفح الزائر
-    var userLang = navigator.language || navigator.userLanguage; 
-    
-    // إذا كانت لغة المتصفح غير العربية، تُرجم للإنجليزية تلقائياً
-    if (!userLang.startsWith('ar')) {
-      var checkInterval = setInterval(function() {
-        var select = document.querySelector('.goog-te-combo');
-        if(select) {
-          select.value = 'en';
-          select.dispatchEvent(new Event('change'));
-          clearInterval(checkInterval);
-        }
-      }, 500);
-    }
-  }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
-
 </html>
